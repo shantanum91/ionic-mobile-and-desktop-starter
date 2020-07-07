@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar *ngIf="!isDesktop">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CRAZY SHOPPING</ion-title>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="isDesktop">
+    <ion-title>
+      <ion-button fill="clear" color="dark" size="large" routerLink="/tabs/home">
+        CRAZY SHOPPING
+      </ion-button>
+
+      <ion-button fill="clear" color="dark" routerLink="/home">
+        Men
+      </ion-button>
+      <ion-button fill="clear" color="dark" routerLink="/home">
+        Women
+      </ion-button>
+      <ion-button fill="clear" color="dark" routerLink="/home">
+        Accessories
+      </ion-button>
+      <ion-button fill="clear" color="dark" routerLink="/home">
+        Profile
+      </ion-button>
+
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="3" size-md="6" size-xs="12">
+        <ion-card>
+          <img src="/assets/tshirts.jpg" />
+          <ion-card-header>
+            <ion-card-subtitle>Starting from ₹399</ion-card-subtitle>
+            <ion-card-title>T Shirts</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xl="3" size-lg="6" size-md="6" size-xs="12">
+        <ion-card>
+          <img src="/assets/winterwear.jpg" />
+          <ion-card-header>
+            <ion-card-subtitle>Starting from ₹699</ion-card-subtitle>
+            <ion-card-title>Winterwear</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xl="3" size-lg="6" size-md="6" size-xs="12">
+        <ion-card>
+          <img src="/assets/formals.jpg" />
+          <ion-card-header>
+            <ion-card-subtitle>Starting from ₹1999</ion-card-subtitle>
+            <ion-card-title>Formals</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xl="3" size-lg="6" size-md="6" size-xs="12">
+        <ion-card>
+          <img src="/assets/jackets.jpg" />
+          <ion-card-header>
+            <ion-card-subtitle>Starting from ₹999</ion-card-subtitle>
+            <ion-card-title>Jackets</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br><br>
+  <ion-item>
+    <h3>Tranding Clothes</h3>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="3" size-lg="4" size-md="6" size-xs="6" *ngFor="let c of clothes">
+        <ion-card>
+          <img [src]="c.imgUrl" />
+          <ion-card-header>
+            <ion-card-subtitle>{{c.name}}</ion-card-subtitle>
+            <ion-card-title>₹{{c.price}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

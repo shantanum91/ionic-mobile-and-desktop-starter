@@ -1,0 +1,45 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/shopping.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-style: italic;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 20px;
+}
+
+.app-name-main {
+    font-family: 'Galada', serif !important;
+    font-size: 40px;
+}
+
+.main-grid {
+    padding-bottom: 2.5rem;
+}
+@media (min-width: 576px) {
+    .main-grid {
+        padding-top: 5rem;
+    }
+}
+
+.login-box {
+    box-sizing: border-box;
+    padding: 25px;
+}
+@media (min-width: 576px) {
+    .login-box {
+        border: 1px solid;
+    }
+}    
