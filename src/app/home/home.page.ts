@@ -19,7 +19,7 @@ export class HomePage implements OnInit {
       { name: 'Women\'s Top', price: '1599', imgUrl: '/assets/clothes/top.jpg' },
       { name: 'Men\'s Jacket', price: '2999', imgUrl: '/assets/clothes/jacket.jpg' },
       { name: 'Men\'s Hoodie', price: '1999', imgUrl: '/assets/clothes/hoodie.jpg' },
-      { name: 'WOmen\s Skirt', price: '2599', imgUrl: '/assets/clothes/skirt.jpg' }
+      { name: 'Women\'s Skirt', price: '2599', imgUrl: '/assets/clothes/skirt.jpg' }
     ];
   }
 
