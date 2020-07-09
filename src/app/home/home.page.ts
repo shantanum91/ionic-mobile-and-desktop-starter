@@ -8,6 +8,7 @@ import { Platform } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
+  categories = [];
   clothes = [];
   isDesktop = false;
   constructor(private platform: Platform) { }
@@ -15,6 +16,12 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.isDesktop = this.platform.is('desktop');
 
+    this.categories = [
+      { name: 'T Shirts', desc: 'Starting from ₹399', imgUrl: '/assets/tshirts.jpg' },
+      { name: 'Winterwear', desc: 'Starting from ₹699', imgUrl: '/assets/winterwear.jpg' },
+      { name: 'Formals', desc: 'Starting from ₹1999', imgUrl: '/assets/formals.jpg' },
+      { name: 'Jackets', desc: 'Starting from ₹999', imgUrl: '/assets/jackets.jpg' }
+    ];
     this.clothes = [
       { name: 'Women\'s Top', price: '1599', imgUrl: '/assets/clothes/top.jpg' },
       { name: 'Men\'s Jacket', price: '2999', imgUrl: '/assets/clothes/jacket.jpg' },
