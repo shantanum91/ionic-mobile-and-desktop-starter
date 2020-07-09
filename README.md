@@ -13,3 +13,5 @@ ionic build --prod
 This will create static files in www folder. Just copy this folder and put inside static folder of any server like tomcat.
 
 Demo: https://ionic-web-demo.web.app
+
+Blog: https://medium.com/@shantanum91/single-ionic-solution-for-mobile-app-and-responsive-website-2ed0400a77ad
