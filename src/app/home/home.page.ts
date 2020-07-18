@@ -23,7 +23,7 @@ export class HomePage implements OnInit {
       { name: 'Jackets', desc: 'Starting from ₹999', imgUrl: '/assets/jackets.jpg' }
     ];
     this.clothes = [
-      { name: 'Women\'s Top', price: '1599', imgUrl: '/assets/clothes/top.jpg' },
+      { name: 'Men\'s Formals', price: '2599', imgUrl: '/assets/clothes/mens-formals.jpg' },
       { name: 'Men\'s Jacket', price: '2999', imgUrl: '/assets/clothes/jacket.jpg' },
       { name: 'Men\'s Hoodie', price: '1999', imgUrl: '/assets/clothes/hoodie.jpg' },
       { name: 'Women\'s Skirt', price: '2599', imgUrl: '/assets/clothes/skirt.jpg' }
